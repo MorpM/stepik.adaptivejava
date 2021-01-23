@@ -18,11 +18,10 @@ public class StarFigure {
                 matrix[i][j] = ".";
             }
         }
-        for (int i = 0; i < n; i++) {
+        
+        for (int i = 0; i <n ; i++) {
             matrix[i][mid]="*";
             matrix[mid][i] = "*";
-        }
-        for (int i = 0; i <n ; i++) {
             if (i<mid){
                 matrix[i][i] = "*";
                 matrix[i][n - i - 1] = "*";
